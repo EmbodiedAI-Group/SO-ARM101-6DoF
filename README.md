@@ -1,7 +1,19 @@
 <div align="center">
 
-   <h1>Standard Open SO-100 & SO-101 Arms</h1>
+   <h1>Standard Open SO-100 & SO-101 & SO-101-6DOF Arms</h1>
    <div style="display: flex; gap: 1rem; justify-content: center; align-items: center;" >
+   <img
+      src="media/dual-so101-6dof-arm.jpg?raw=true"
+      alt="Dual SO-101 6dof follower arm"
+      title="DUAL SO-101 6DOF follower arm"
+      style="width: 40%;"
+    />
+   <img
+      src="media/so101-6dof-arm.jpg?raw=true"
+      alt="SO-101 6dof follower arm"
+      title="SO-101 6DOF follower arm"
+      style="width: 40%;"
+    />
    <img
       src="media/SO101_Follower.webp?raw=true"
       alt="SO-101 follower arm"
@@ -17,10 +29,10 @@
 </div>
 
 <h2>
-    <p>Build Your Own SO-101 Robot!</p>
+    <p>Build Your Own SO-101(-6DOF) Robot!</p>
 </h2>
 
-The SO‑101 is the next‑generation version of the SO‑100 robot arm, originally designed by the [RobotStudio](https://www.therobotstudio.com) in collaboration with [Hugging Face](https://huggingface.co/lerobot). It has improved wiring, is easier to assemble (no gear removal) and uses updated motors for the leader arm.
+The SO‑101(-6DOF) is the next‑generation version of the SO‑100 robot arm, originally designed by the [RobotStudio](https://www.therobotstudio.com) in collaboration with [Hugging Face](https://huggingface.co/lerobot). It has improved wiring, is easier to assemble (no gear removal) and uses updated motors for the leader arm.
 
 These arms are designed to work seamlessly with the open‑source 🤗 LeRobot library. Join our community on [Discord](https://discord.gg/ggrqhPTsMe) to collaborate on both hardware and software, and help make end‑to‑end AI for robotics more accessible.
 
@@ -41,7 +53,7 @@ You have two options:
    - Optionally follow our [Assembly Guide](https://huggingface.co/docs/lerobot/so101).
 
 ### Setup with LeRobot 🤗
-After sourcing all parts you can setup your SO-101 with LeRobot [tutorial](https://huggingface.co/docs/lerobot/so101). 
+After sourcing all parts you can setup your SO-101(-6DOF) with LeRobot [tutorial](https://huggingface.co/docs/lerobot/so101). 
 
 ### Optional Hardware 🔧
 This repository also includes a range of optional hardware designs such as a raised leader base and different camera mounts. Here you can explore the [full list](#optional-hardware).
@@ -253,3 +265,40 @@ Better structure and better grasp (both precision and power). No need to print s
 ## Debugging Motors
 For debugging, any Windows PC can connect over USB to program the servos and to debug or do tests. To do so download [Feetech Software](https://www.feetechrc.com/software.html). For Ubuntu, you can use [FT_SCServo_Debug_Qt](https://github.com/Kotakku/FT_SCServo_Debug_Qt). Note: This step is not necessary as motors can be configured using the LeRobot Library, but this can be helpful for debugging.
 
+## SO101-ARM-6DOF
+  <img
+      src="media/dual-so101-6dof-arm.jpg?raw=true"
+      alt="Dual SO-101 6dof follower arm"
+      title="DUAL SO-101 6DOF follower arm"
+      style="width: 40%;"
+    />
+   <img
+      src="media/so101-6dof-arm.jpg?raw=true"
+      alt="SO-101 6dof follower arm"
+      title="SO-101 6DOF follower arm"
+      style="width: 40%;"
+    />
+
+Simply but effectively, we reuse the "Wrist_Roll_Pitch_SO101" and modify the "Under_arm_SO101" and finally get a standard 6DoF arm as above. It becomes much more flexible but still keeps light-weight! 
+
+## SO101-ARM-6DOF Contributors
+Design: [oym](https://github.com/oym1994) [hhuysqt](https://github.com/hhuysqt)
+Print:  [hhuysqt](https://github.com/hhuysqt)
+
+## TODO For SO101-ARM-6DOF
+1、 URDF from Solidworks
+
+2、 Simulation
+
+3、 Inverse Kinematics(IK) and Forward Kinematics(FK) with pydrake and URDF
+
+## More
+Waiting for our Lerobot-Orthrus, a very interesting dual-arm robotic dog, for domestic tasks and entertainment! 
+
+
+  <img
+      src="media/lerobot-orthrus.jpg?raw=true"
+      alt="Lerobot-Orthrus"
+      title="Lerobot-Orthrus"
+      style="width: 40%;"
+    />
