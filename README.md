@@ -282,7 +282,9 @@ For debugging, any Windows PC can connect over USB to program the servos and to 
 Simply but effectively, we reuse the "Wrist_Roll_Pitch_SO101" and modify the "Under_arm_SO101" and finally get a standard 6DoF arm as above. It becomes much more flexible but still keeps light-weight! 
 
 ## SO101-ARM-6DOF Contributors
+
 Design: [oym](https://github.com/oym1994) [hhuysqt](https://github.com/hhuysqt)
+
 Print:  [hhuysqt](https://github.com/hhuysqt)
 
 ## TODO For SO101-ARM-6DOF
